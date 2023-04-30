@@ -200,8 +200,7 @@ function renderProducts(productCards:any)
     }
 
     /* Footer */
-    
-function renderFooter(data :any)
+function renderFooter(data:any)
 {
         /* creating footer container */
         let Footer = document.createElement("footer");
