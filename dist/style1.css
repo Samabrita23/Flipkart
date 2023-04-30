@@ -1,0 +1,199 @@
+body{
+    position:relative;
+    width:100%;
+    height:100%;
+    background-color:white;
+    margin:0px;
+    font-family: 'Roboto' , sans-serif;
+    background-color:white;
+    font-size: 14px;
+    font-style: normal;
+}
+header {
+   background-color: #3F72E9;
+   position: relative;
+   height: 56px;
+   margin: 0px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   
+}
+header .nav-container{
+    /* display: flex; */
+    /* align-items: center; */
+    height: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+}
+.FlipkartLogo {
+    display: flex;
+    justify-content: center;
+    margin-left: 13px; 
+    image-rendering: pixelated;
+}
+.search{
+    margin-left: 16px;
+    top: 8px;
+    width: 540px;
+    height: 36px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
+}
+.search input{
+   width: calc(100% - 20px);
+   height: 100%;
+   padding: 0 8px;
+}
+.seller{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.Cart{
+    margin-left: 24px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 40px 0 40px 0; 
+    flex-wrap: wrap;
+    white-space: nowrap;;
+    box-sizing: border-box;
+    border-bottom: 3px solid #F0F0F1;
+}
+.col-left{
+    position: relative;
+    flex: 0.2;
+    left: 32px;
+    margin: 0 80px 0 15px;
+}
+.col-mid{
+    position: relative;
+    display: flex;
+    flex:2;
+    flex-direction:column;
+    margin-right: 40px;
+    line-height: 17px;
+    font-size: 14px;
+}
+.phone {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 2%;
+}
+.ProductFeature{
+  padding-inline-start: 16px; 
+}
+.rating{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 4px; 
+}
+.ratingBox{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    align-content: space-around;
+    padding: 2px 2px 2px 4px;
+    gap: 4px;
+    width: 40px;
+    height: 18px;
+    background: #508C47;
+    border-radius: 4px;
+}
+.ratingNumber{
+    position: relative;
+    width: 18px;
+    height: 12px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    color: #FFFFFF;   
+}
+.ratings_reviews{
+    position: relative;
+   display: flex;
+   flex: 1;
+   align-items: center;
+   width: 216px;
+   height: 16px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #000000;
+}
+.col-right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 24px;
+}
+.price{
+   font-size: 24px;
+   font-weight: 700;
+   margin-bottom: 2%;
+}
+.bold-text{
+    font-weight: bold;
+}
+.offer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+}
+.Footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #172337;
+    margin-top: 25px;
+    margin: 0;
+}
+.columnDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;
+    flex: 1;
+    padding: 40px 30px 30px 30px;
+    line-height: 0px;
+    white-space: nowrap;
+    height: 100%;
+    color: #FFFFFF;
+}
+.columnDiv{
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.head{
+   color: #878787;
+   font-style:normal ;
+   font-weight: bold;
+   font-size: 14px;
+   margin-bottom: 14px;
+}
+.divider{
+   width: 1px;
+   height: 160px;
+   left: 832px;
+   margin-top: 40px;
+   background: #474D5D;
+}  

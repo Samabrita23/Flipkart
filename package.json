@@ -1,0 +1,27 @@
+{
+    "name": "typescript-template",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "npx webpack && npx webpack serve"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+      "@types/lodash": "^4.14.192",
+      "css-loader": "^6.7.3",
+      "style-loader": "^3.3.2",
+      "ts-loader": "^9.4.2",
+      "typescript": "^5.0.2",
+      "webpack": "^5.38.1",
+      "webpack-cli": "^4.7.2",
+      "webpack-dev-server": "^4.13.1"
+    },
+    "dependencies": {
+      "lodash": "^4.17.21"
+    }
+  }
+  
