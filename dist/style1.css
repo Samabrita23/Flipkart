@@ -34,7 +34,7 @@ header .nav-container{
     image-rendering: pixelated;
 }
 .search{
-    margin-left: 16px;
+    margin-left: 20px;
     top: 8px;
     width: 540px;
     height: 36px;
@@ -48,7 +48,7 @@ header .nav-container{
    padding: 0 8px;
 }
 .seller{
-    margin-left: 20px;
+    margin-left: 15px;
     text-decoration: none;
     color: white;
     font-size: 16px;
@@ -56,7 +56,7 @@ header .nav-container{
     line-height: 20px;
 }
 .Cart{
-    margin-left: 24px;
+    margin-left: 20px;
     text-decoration: none;
     color: white;
     font-size: 16px;
@@ -107,7 +107,6 @@ header .nav-container{
     display: flex;
     flex-direction: row;
     align-items:center;
-    align-content: space-around;
     padding: 2px 2px 2px 4px;
     gap: 4px;
     width: 40px;
@@ -125,12 +124,9 @@ header .nav-container{
     color: #FFFFFF;   
 }
 .ratings_reviews{
-    position: relative;
+   position: relative;
    display: flex;
-   flex: 1;
    align-items: center;
-   width: 216px;
-   height: 16px;
    font-weight: 400;
    font-size: 14px;
    line-height: 16px;
@@ -157,7 +153,7 @@ header .nav-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 12px;
+    gap: 6px;
 }
 .Footer{
     position: relative;
