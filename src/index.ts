@@ -7,7 +7,7 @@ fetch("https://sandbox.nextleap.app/products/fetch")
     renderHeader();
     console.log(data)
     renderProducts(data["productCard"])
-    renderFooter(data["columns"])
+    renderFooter(data["footer"])
 })
 .catch( (error) => {
     console.error(error.message)
@@ -198,62 +198,75 @@ function renderProducts(productCards:any)
 
         document.body.appendChild(productDiv);   
     }
+}
 
     /* Footer */
-function renderFooter(data:any)
+function renderFooter(footerData:any)
 {
+        // let Footer = document.createElement("footer");
+        // Footer.classList.add("Footer");
+        // let columns= document.createElement("div");
+        // columns.classList.add ("Col");
+        // columns.innerHTML = footer.colunms[0];
+        // Footer.appendChild(columns);
+
         /* creating footer container */
         let Footer = document.createElement("footer");
         Footer.classList.add("Footer");
-        let columns= document.createElement("div");
-        columns.classList.add ("Col");
-        Footer.appendChild(columns);
+
         let col_1 = document.createElement("div");
         let col_2 = document.createElement("div");
         col_1.classList.add("col_1");
         col_2.classList.add("col_2");
+        
+        /* Each column */
+        let columns= document.createElement("div");
+        columns.classList.add ("Col");
+        Footer.appendChild(columns);
 
-        let columnDiv=document.createElement("div");
-        columnDiv.classList.add("columnDiv");
+        // let columnDiv=document.createElement("div");
+        // columnDiv.classList.add("columnDiv");
+
         let head = document.createElement("div");
         head.classList.add("head");
-  
-        for (let i = 0; i < 1; i++)
-        {
-            for (let j=0;j <(footer.colunms.length) - 2; j++)
+
+        for (let footer of footerData)
+       { 
+            for (let j=0; j < (footer.colunms.length) - 2; j++)
             {
                 // heading of each column
                 head.innerHTML = footer.colunms[j].title;
-                columnDiv.appendChild(head);
+                columns.appendChild(head);
                
-                for (let k=0; k < footer.columns[j].data.length; k++)
+                for (let k=0; k < footer.colunms[j].data.length; k++)
                 {
-                    let Footer_item:any = document.createElement("li");
-                    Footer_item.innerHTML = footer.columns[j].data[k];
-                    head.appendChild(Footer_item);
+                    let Footer_item:any = document.createElement("p");
+                    Footer_item.innerHTML = footer.colunms[j].data[k];
+                    columns.appendChild(Footer_item);
                 }
-                col_1.appendChild(columnDiv);
+                col_1.appendChild(columns);
             }
-            for (let a=4;a<footer.colunms.length;a++)
-            {
 
-                head.innerHTML=footer.colunms[a].title
+            for (let a=4; a < footer.colunms.length; a++)
+            {
+                head.innerHTML=footer.colunms[a].title;
+                columns.appendChild(head);
                 for (let k=0; k < footer.columns[a].data.length; k++)
                 {
                     let Footer_item:any = document.createElement("p");
-                    Footer_item.innerHTML = footer.columns[a].data[k];
-                    head.appendChild(Footer_item);
+                    Footer_item.innerHTML = footer.colunms[a].data[k];
+                    columns.appendChild(Footer_item);
                 }
-               col_2.appendChild(columnDiv);
+               col_2.appendChild(columns);
             }
-        }
+        Footer.appendChild(col_1);
+        Footer.appendChild(col_2);
 
-        columns.appendChild(columnDiv);
-
-        document.body.appendChild(footer);
+        document.body.appendChild(Footer);
     
-}   
+        } 
+    }  
 
-}
+
     
 
