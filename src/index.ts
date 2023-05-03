@@ -4,6 +4,7 @@ import { renderProduct } from "./components/product";
 import { renderfooter } from "./components/footer";
 
 /* Making Network Call to fetch the data */
+
 fetch("https://sandbox.nextleap.app/products/fetch")
 .then(async (data:Response) => {
     return await data.json()
